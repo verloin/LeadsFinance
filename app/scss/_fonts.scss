@@ -1,0 +1,19 @@
+
+
+
+// @font-face {
+//   font-family: 'Sofia Pro';
+//   src: url('../fonts/SofiaProMedium.woff2') format('woff2'),
+//     url('../fonts/SofiaProMedium.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Montserrat-Medium";
+
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

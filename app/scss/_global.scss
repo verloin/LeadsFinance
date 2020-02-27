@@ -1,0 +1,52 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+	text-decoration: none;
+}
+
+
+
+.title {
+	text-align: left;
+	font-size: 40px;
+  @include title;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.text {
+  @include text;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+
+
+
