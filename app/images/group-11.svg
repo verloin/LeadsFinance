@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="385" height="441" viewBox="0 0 385 441">
+    <defs>
+        <linearGradient id="prefix__c" x1="28.456%" x2="71.544%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#9788FF"/>
+            <stop offset="100%" stop-color="#0016D5"/>
+        </linearGradient>
+        <linearGradient id="prefix__d" x1="23.779%" x2="64.801%" y1="124.528%" y2="0%">
+            <stop offset="0%" stop-color="#D6FF77"/>
+            <stop offset="100%" stop-color="#85FFBC"/>
+        </linearGradient>
+        <linearGradient id="prefix__e" x1="53.895%" x2="79.255%" y1="100%" y2="25.437%">
+            <stop offset="0%" stop-color="#01F6E6"/>
+            <stop offset="100%" stop-color="#65FF89"/>
+        </linearGradient>
+        <path id="prefix__a" d="M0 0H513V474H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-87 -33)">
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <path fill="#B8C8DD" d="M85.304 522.36l226.08-269.432 38.765 72.243c5.802 10.812 4.435 24.068-3.453 33.468l-226.08 269.433-38.765-72.243c-5.802-10.812-4.435-24.068 3.453-33.468z" mask="url(#prefix__b)" opacity=".24"/>
+        <path fill="url(#prefix__c)" d="M321.5 303.646l100.074-119.264 46.385 86.512c5.796 10.811 4.427 24.062-3.458 33.46L364.426 423.618l-46.385-86.512c-5.796-10.811-4.427-24.062 3.458-33.46z" mask="url(#prefix__b)" opacity=".18" style="mix-blend-mode:multiply"/>
+        <path fill="url(#prefix__d)" d="M376.545 88.623l46.04-54.87 19.02 35.473c6.956 12.973 5.312 28.874-4.15 40.151l-46.04 54.87-19.02-35.473c-6.956-12.973-5.312-28.874 4.15-40.151z" mask="url(#prefix__b)" opacity=".5" style="mix-blend-mode:multiply"/>
+        <path fill="url(#prefix__e)" d="M-44.429 630.538l269.957-321.723 20.392 38.25c5.76 10.802 4.378 24.02-3.491 33.397L-27.528 702.185l-20.392-38.25c-5.76-10.802-4.378-24.02 3.491-33.397z" mask="url(#prefix__b)" opacity=".4" style="mix-blend-mode:multiply"/>
+    </g>
+</svg>
