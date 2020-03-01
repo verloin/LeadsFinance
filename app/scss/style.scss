@@ -396,6 +396,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        min-width: 0;
       }
     }
   }
@@ -437,9 +438,12 @@
 
 .offers__clider-inner {
   text-align: center;
+  padding-bottom: 294px;
+  max-width: 800px;
 }
 
 .offers__clider-item {
+  max-height: 500px;
   &_img {
     position: relative;
     display: inline-block;
@@ -469,13 +473,13 @@
   position: absolute;
   top: 55px;
   left: 102px;
-  background-color: #fff;
+  background-color: #ecf0f3;
 }
 
 .slider__arrows-right {
   position: absolute;
   top: 251px;
-  left: 460px;
+  left: 470px;
 }
 
 .offers__clider-item_user {
@@ -484,4 +488,88 @@
   position: absolute;
   bottom: -123px;
   left: 100px;
+  min-width: 0;
+}
+
+.slider_user-text {
+  margin-left: 40px;
+  text-align: left;
+  &_text {
+    padding-top: 7px;
+  }
+}
+
+.slick__items {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 238px;
+  left: 85%;
+  li + li {
+    margin-left: 15px;
+  }
+  .slick-active {
+    #slick-slide-control02,
+    #slick-slide-control01,
+    #slick-slide-control00 {
+      background-color: #19bd9a;
+    }
+  }
+}
+
+#slick-slide-control02,
+#slick-slide-control01,
+#slick-slide-control00 {
+  width: 9px;
+  height: 14px;
+  color: transparent;
+  background-color: #fff;
+  border: 1px solid #19bd9a;
+  border-radius: 50%;
+  outline: none;
+  &:active {
+    background: #19bd9a;
+  }
+}
+
+.slick-btn {
+  position: absolute;
+  top: 22%;
+	cursor: pointer;
+  outline: none;
+  transform: scale(3);
+  border: none;
+  background-color: transparent;
+  font-size: 28px;
+  color: #b8c8dd;
+}
+
+
+.slick-btn:before {
+  transform: translate(-50%, -50%) ;
+  font-family: 'icomoon';
+}
+
+.slick-next {
+  right: -13%;
+  z-index: 2;
+  font-family: 'icomoon';
+}
+
+.slick-prev {
+  left: -13%;
+  z-index: 2;
+  font-family: 'icomoon';
+}
+
+.slick-next:before {
+  content: "\f105";
+}
+
+.slick-prev:before {
+  content: "\f104";
 }
