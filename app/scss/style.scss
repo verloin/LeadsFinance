@@ -9,6 +9,7 @@
 // ================================================
 
 
+
 .header-box {
   position: relative;
   background-image: linear-gradient(to bottom, #fdfdfe, #ecf0f3);
@@ -120,7 +121,7 @@
     top: -139px;
     left: 0;
     content: '';
-    background-image: url(../images/group-14.png);
+    background-image: url(../images/group-14.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -128,7 +129,7 @@
 
 .best__header {
   text-align: left;
-  margin-left: 295px;
+  margin: 0 23%;
   &-title {
     margin-bottom: 20px;
     font-size: 40px;
@@ -141,8 +142,8 @@
 .best__items {
   display: flex;
   justify-content: center;
-  padding-left: 100px;
-  padding-top: 65px;
+  flex-wrap: wrap;
+  margin: 65px auto;
   .best__items-item02 {
     margin: 0px 80px;
   }
@@ -164,7 +165,6 @@
 
 .support__inner {
   background-image: linear-gradient(to top, #ffffff, #ecf0f3 50%);
-  // background-color: $bg;
   position: relative;
   .support__box {
     position: absolute;
@@ -386,6 +386,7 @@
       display: inline-block;
       width: 380px;
       height: 321px;
+      max-width: 100%;
     }
     .offers_box-wrapper {
       padding: 30px 65px 20px 35px;
@@ -473,7 +474,6 @@
   position: absolute;
   top: 55px;
   left: 102px;
-  background-color: #ecf0f3;
 }
 
 .slider__arrows-right {
@@ -573,3 +573,63 @@
 .slick-prev:before {
   content: "\f104";
 }
+
+
+// =======================================================================
+//                               Footer
+// =======================================================================
+
+
+.footer__inner {
+  background-color: $bg;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  &-list {
+    li + li {
+      margin-top: 30px;
+    }
+    span {
+      color: #3a01c4;
+    }
+  }
+  &-title {
+    margin-bottom: 40px;
+  }
+}
+
+.foot-grey-text {
+  color: #818fa0;
+}
+
+.footer__foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 159px;
+  margin: 0 7%;
+  border-top: 1px solid #b8c8dd;
+  &-logo {
+    img {
+      max-width: 100%;
+    }
+  }
+  &-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #818fa0;
+  }
+}
+
+
+
+@import 'media';
