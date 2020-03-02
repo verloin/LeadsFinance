@@ -4,9 +4,9 @@ $text: #0c005f;
 $bg: #ecf0f3;
 
 @mixin title {
-	font-family: "Montserrat-Medium";
-	font-weight: 500;
-	font-style: normal;
+	font-family: 'SofiaPro-Medium';
+	font-weight: normal;
+  font-style: normal;
 	font-size: 20px;
 	color: $title;
  }
