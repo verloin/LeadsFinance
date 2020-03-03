@@ -9,12 +9,14 @@
 // ================================================
 
 
+.header {
+  z-index: 3;
+}
 
 .header-box {
   position: relative;
   background-image: linear-gradient(to bottom, #fdfdfe, #ecf0f3);
 }
-
 
 .header__inner-nav {
   display: flex;
@@ -27,20 +29,35 @@
   }
   .header__menu {
     @include text;
-    margin-top: 50px;
+    margin-top: 38px;
     text-align: center;
     &-ul {
       display: flex;
       justify-content: space-between;
       text-align: center;
+      li {
+        margin-top: 12px;
+      }
       li + li {
         margin-left: 50px;
       }
       li:nth-child(5) {
         margin-left: 20px;
       }
+      li:nth-child(6) {
+        margin-left: 0px;
+        margin-top: 0;
+      }
     }
   }
+}
+
+.header__menu-register {
+  border-radius: 19px;
+  box-shadow: 7px 7px 18px 0 rgba(209, 217, 230, 0.6);
+  background-color: #ffffff;
+  padding: 0;
+  padding: 12px 33px;
 }
 
 .menu__color {
@@ -218,7 +235,7 @@
 .support__footer {
   display: flex;
   align-items: center;
-  padding-left: 180px;
+  padding-left: 12%;
   padding-top: 150px;
   padding-bottom: 160px;
   &::before {
@@ -461,6 +478,7 @@
     }
   }
   &_text {
+    @include text;
     width: 580px;
     height: 210px;
     text-align: left;
