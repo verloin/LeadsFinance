@@ -12,9 +12,9 @@
         prevArrow: '<button type="button" class="slick-btn slick-prev"></button>'
     });
 
-    
+
     $('.header__menu-btn').on('click', function(){
-        $('.header__menu > ul').slideToggle();
+        $('.header__menu ul').slideToggle();
     });
 
 
