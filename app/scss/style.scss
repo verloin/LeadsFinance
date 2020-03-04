@@ -21,15 +21,18 @@
 .header__inner-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 95px;
   .header__logo {
+    align-items: center;
+    display: flex;
     margin-top: 20px;
     width: 260px;
     height: 76px;
   }
   .header__menu {
     @include text;
-    margin-top: 38px;
+    margin-top: 27px;
     text-align: center;
     &-ul {
       display: flex;
@@ -51,6 +54,9 @@
     }
   }
 }
+.menu__eng-color {
+  margin-right: 20px;
+}
 
 .header__menu-register {
   border-radius: 19px;
@@ -60,7 +66,7 @@
   padding: 12px 33px;
 }
 
-.menu__color {
+.menu__eng-color {
   color: #97a7bd;
 }
 
@@ -135,26 +141,27 @@
 .best__inner {
   background-color: $bg;
   padding-top: 86px;
-  padding-bottom: 340px;
+  padding-bottom: 200px;
   position: relative;
-  &::before {
-    max-width: 459px;
-    max-height: 603px;
-    width: 100%;
-    height: 100%;
+  z-index: 1;
+  .best__inner-img {
     position: absolute;
-    top: -139px;
+    z-index: 3;
+    top: -155px;
     left: 0;
-    content: '';
-    background-image: url(../images/group-14.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    img {
+      max-width: 459px;
+      max-height: 603px;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
 .best__header {
   text-align: left;
-  margin: 0 14% 0 35%;
+  margin: 0 2% 0 23%;
+  max-width: 600px;
   &-title {
     margin-bottom: 20px;
     font-size: 40px;
@@ -164,11 +171,13 @@
   }
 }
 
-.best__items {
+ .best__items {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 65px 3%;
+  margin: 65px 2% 0 22%;
+  position: absolute;
+  z-index: 11;
   .best__items-item02 {
     margin: 0px 80px;
   }
@@ -182,6 +191,10 @@
   }
 }
 
+.best__header-title-eng {
+  max-width: 500px;
+}
+
 
 // =======================================================================
 //                               Support
@@ -191,9 +204,10 @@
 .support__inner {
   background-image: linear-gradient(to top, #ffffff, #ecf0f3 50%);
   position: relative;
+  padding-top: 330px;
   .support__box {
     position: absolute;
-    top: -130px;
+    top: 200px;
     right: 190px;
     max-width: 580px;
     &-title {
@@ -309,6 +323,11 @@
   margin-top: -90px;
 }
 
+.support__footer-title-eng {
+  margin-right: 88px;
+  max-width: 500px;
+}
+
 
 // =======================================================================
 //                               Top Offers
@@ -408,10 +427,10 @@
       }
     }
     &-img {
-      display: inline-block;
-      width: 380px;
-      height: 321px;
-      max-width: 100%;
+      display: block;
+      max-width: 380px;
+      max-height: 321px;
+      width: 100%;
     }
     .offers_box-wrapper {
       padding: 30px 65px 20px 35px;
@@ -574,19 +593,20 @@
   color: #b8c8dd;
 }
 
-
 .slick-btn:before {
   transform: translate(-50%, -50%) ;
   font-family: 'icomoon';
 }
 
 .slick-next {
+  display: block;
   right: -13%;
   z-index: 2;
   font-family: 'icomoon';
 }
 
 .slick-prev {
+  display: block;
   left: -13%;
   z-index: 2;
   font-family: 'icomoon';
@@ -612,6 +632,7 @@
 .footer__box {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 90px;
   &-list {
@@ -624,6 +645,9 @@
   }
   &-title {
     margin-bottom: 40px;
+  }
+  &-item {
+    min-width: 115px;
   }
 }
 
@@ -663,4 +687,4 @@
 
 
 
-//  @import 'media';
+
