@@ -9,7 +9,6 @@
 	.header__inner-nav {
 		padding: 0px 20px 0px 6%;
 		.header__menu {
-			// margin-top: 27px;
 			&-ul {
 				li + li {
 					margin-left: 45px;
@@ -77,8 +76,6 @@
     max-width: 520px;
     font-size: 46px;
 	}
-	// 	// ========================================
-
 	.offers__items {
 		.offers__item-img {
 			display: block;
@@ -114,8 +111,6 @@
 			margin-left: 43px;
 		}
 	}
-// 	// ========================================
-
 }
 
 @media (max-width: 1200px) {                  //=====1200====//
@@ -175,7 +170,6 @@
 			&_text {
 				font-size: 18px;
 				left: 58px;
-				padding: 0 53px;
 			}
 			&_img {
 				max-width: 678px;
@@ -219,8 +213,8 @@
 		}
 	}
 	.slick-dots {
-    bottom: 220px;
-    left: 77%;
+    bottom: 237px;
+    left: 71%;
 	}
 }
 
@@ -426,11 +420,6 @@
 	.slider__arrows-left {
     left: 114px;
 	}
-	.offers__clider-item_text p {
-    display: inline;
-    padding-left: 94px;
-    margin: 0;
-	}
 	.footer__box-title {
 		font-size: 18px;
 	}
@@ -583,34 +572,24 @@
 			&_text {
 				font-size: 14px;
 				left: 8px;
-				padding: 0 53px;
-				width: 516px;
-				top: 56px;
-				p {
-					padding-left: 77px;
+				padding: 0 20px;
+				width: 485px;
+				top: 43px;
+			}
+			&_user {
+				bottom: -75px;
+				left: 61px;
+				.slider_user-text {
+					font-size: 14px;
+				}
+				.slider_user-text_text {
+					font-size: 12px;
+					width: 120px;
 				}
 			}
 			&_img {
 				max-width: 500px;
 			}
-		}
-	}
-	.slider__arrows-left {
-		position: absolute;
-		top: 45px;
-    left: 65px;
-		img {
-			max-width: 41px;
-			max-height: 30px;
-		}
-	}
-	.slider__arrows-right {
-		position: absolute;
-		top: 162px;
-    left: 230px;
-		img {
-			max-width: 41px;
-			max-height: 30px;
 		}
 	}
 	.slick-prev {
@@ -621,23 +600,17 @@
 		right: 9%;
 		top: 94px;
 	}
-	.offers__clider-item_user {
-		bottom: -75px;
-		left: 61px;
+	.slider_user-foto01 {
+		max-width: 80px;
+		max-height: 80px;
 		img {
 			max-width: 80px;
 			max-height: 80px;
 		}
-		.slider_user-text {
-			font-size: 14px;
-		}
-		.slider_user-text_text {
-			font-size: 12px;
-		}
 	}
 	.slick-dots {
     bottom: 252px;
-    left: 70%;
+    left: 62%;
 		}
 	}
 
@@ -677,11 +650,6 @@
 	.header-box .header__inner-nav .header__menu ul {
     right: 75px;
 	}
-	// ==============================================
-
-	
-
-// ===========================
 }
 
 @media (max-width: 800px) {                   //=====800====//
@@ -711,6 +679,12 @@
 			font-size: 14px;
 		}
 	}
+	.header__content-btn {
+		padding: 18px 24px;
+		button {
+			font-size: 12px;
+		}
+}
 	.best__header {
     margin: 0 14% 0 21%;
 	}
@@ -755,7 +729,6 @@
 			height: 40px;
 			text-align: center;
 			padding: 11px 23px;
-			// width: 160px;
 			}
 		&::before {
 			max-width: 198px;
@@ -970,6 +943,9 @@
 	.footer__box-item {
 		margin-bottom: 28px;
 	}
+	.offers__clider-item_text {
+    width: 450px;
+  }
 }
 
 @media (max-width: 500px) {                      //=====500====//
@@ -981,16 +957,14 @@
 			bottom: 74px;
 		}
 	}
-	.offers__clider-item_text {
-    font-size: 14px;
-    left: -20px;
-    top: 51px;
+	.best__inner {
+    padding-top: 0px;
 	}
-	.offers__clider-item_img {
-		img {
-			max-width: 500px;
-			height: 300px;
-		}
+	.offers__clider-item_text {
+    font-size: 13px;
+    left: 0px;
+		top: 39px;
+		width: 420px;
 	}
 	.support__items {
     padding-top: 80px;
@@ -1005,6 +979,21 @@
     font-size: 10px;
 	}
 }
+
+@media (max-width: 450px) {                      //=====450====//
+	.header__content-btn {
+			bottom: 136px;
+	}
+	.offers__clider-item_text {
+    width: 400px;
+	}
+	.offers__clider-item_img {
+		img {
+			height: 250px
+		}
+	}
+}
+
 
 @media (max-width: 400px) {                      //=====400====//
 	.header__inner-nav {
@@ -1030,17 +1019,10 @@
 	.best__inner {
     padding-top: 0px;
 	}
-	.offers__clider-item_img {
-		img {
-			max-width: 400px;
-			height: 300px;
-		}
-	}
 	.offers__clider-item_text {
     font-size: 12px;
-    left: -37px;
-		top: 51px;
-		width: 400px;
+		top: 22px;
+		width: 345px;
 	}
 	.slider__arrows-left {
     position: absolute;
@@ -1078,5 +1060,8 @@
     max-width: 195px;
     max-height: 300px;
     top: 225px;
+	}
+	.offers__clider-item_text {
+		width: 300px;
 	}
 }

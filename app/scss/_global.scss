@@ -10,12 +10,12 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0px 15px;
-  z-index: 1;
-}
+// body {
+//   max-width: 1400px;
+//   margin: 0 auto;
+//   padding: 0px 15px;
+//   z-index: 1;
+// }
 
 ul, li {
   margin: 0;
@@ -28,7 +28,12 @@ a {
 	text-decoration: none;
 }
 
-
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  z-index: 1;
+}
 
 .title {
 	text-align: left;
